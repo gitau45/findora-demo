@@ -28,8 +28,17 @@
   <div class="bg-black text-white text-sm py-2">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between px-4 items-center sm:items-start gap-2 sm:gap-0">
       <p>Welcome to Findora Marketplace</p>
-      <div class="space-x-4">
-        <a href="#" class="hover:text-gold">Login</a>
+      <div class="space-x-4 flex flex-wrap items-center">
+        <!-- Sign In Button -->
+        <a href="login.html" class="flex items-center gap-1 hover:text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A9 9 0 1118.9 17.8M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          Sign In
+        </a>
+
         <a href="#" class="hover:text-gold">Register</a>
         <a href="#" class="hover:text-gold">Vendor Portal</a>
       </div>
@@ -45,16 +54,42 @@
       </div>
 
       <div class="flex-1 md:mx-6 w-full">
-        <input
-          type="text"
-          placeholder="Search products, brands and categories..."
-          class="w-full border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gold"
-        />
+        <!-- Search with icon -->
+        <div class="relative w-full">
+          <span class="absolute left-4 top-2.5 text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+          </span>
+
+          <input
+            type="text"
+            placeholder="Search products, brands and categories..."
+            class="w-full border rounded-full pl-12 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-gold"
+          />
+        </div>
       </div>
 
       <div class="flex items-center space-x-4 md:space-x-6">
-        <a href="#" class="font-semibold hover:text-gold">Cart</a>
-        <a href="#" class="bg-gold text-black px-4 py-2 rounded-full font-semibold hover:opacity-90">
+        <!-- Cart button with icon -->
+        <a href="#" class="flex items-center gap-1 font-semibold hover:text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7h13M7 13l-4-8M17 13l1.5 7M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+          </svg>
+          Cart
+        </a>
+
+        <!-- Vendor Button with icon -->
+        <a href="#" class="bg-gold text-black px-4 py-2 rounded-full font-semibold hover:opacity-90 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 9l1-5h16l1 5M5 9v10a1 1 0 001 1h12a1 1 0 001-1V9" />
+          </svg>
           Become a Vendor
         </a>
       </div>
