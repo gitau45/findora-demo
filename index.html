@@ -26,7 +26,7 @@
 
   <!-- TOP BAR -->
   <div class="bg-black text-white text-sm py-2">
-    <div class="max-w-7xl mx-auto flex justify-between px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between px-4 items-center sm:items-start gap-2 sm:gap-0">
       <p>Welcome to Findora Marketplace</p>
       <div class="space-x-4">
         <a href="#" class="hover:text-gold">Login</a>
@@ -38,13 +38,13 @@
 
   <!-- HEADER -->
   <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
       <div class="flex items-center space-x-3">
         <img src="images/Logo.jpg" alt="Findora Logo" class="h-10 w-auto">
         <span class="text-2xl font-bold">Findora</span>
       </div>
 
-      <div class="flex-1 mx-6">
+      <div class="flex-1 md:mx-6 w-full">
         <input
           type="text"
           placeholder="Search products, brands and categories..."
@@ -52,7 +52,7 @@
         />
       </div>
 
-      <div class="flex items-center space-x-6">
+      <div class="flex items-center space-x-4 md:space-x-6">
         <a href="#" class="font-semibold hover:text-gold">Cart</a>
         <a href="#" class="bg-gold text-black px-4 py-2 rounded-full font-semibold hover:opacity-90">
           Become a Vendor
@@ -63,58 +63,58 @@
 
   <!-- CATEGORIES -->
   <section class="bg-white border-t">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex space-x-6 overflow-x-auto text-sm font-semibold">
-      <a href="#" class="hover:text-gold">Electronics</a>
-      <a href="#" class="hover:text-gold">Fashion</a>
-      <a href="#" class="hover:text-gold">Home & Living</a>
-      <a href="#" class="hover:text-gold">Beauty</a>
-      <a href="#" class="hover:text-gold">Sports</a>
-      <a href="#" class="hover:text-gold">Groceries</a>
+    <div class="max-w-7xl mx-auto px-4 py-3 flex space-x-4 sm:space-x-6 overflow-x-auto text-sm font-semibold">
+      <a href="#" class="hover:text-gold whitespace-nowrap">Electronics</a>
+      <a href="#" class="hover:text-gold whitespace-nowrap">Fashion</a>
+      <a href="#" class="hover:text-gold whitespace-nowrap">Home & Living</a>
+      <a href="#" class="hover:text-gold whitespace-nowrap">Beauty</a>
+      <a href="#" class="hover:text-gold whitespace-nowrap">Sports</a>
+      <a href="#" class="hover:text-gold whitespace-nowrap">Groceries</a>
     </div>
   </section>
 
+  <!-- HERO -->
   <section class="bg-black text-white">
-  <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+    <div class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-    <!-- LEFT CONTENT -->
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        Buy & Sell Anything on <span class="text-gold">Findora</span>
-      </h1>
-      <p class="mb-6 text-gray-300">
-        A trusted multi-vendor marketplace where sellers grow and buyers shop with confidence.
-      </p>
-      <div class="space-x-4">
-        <a href="#" class="bg-gold text-black px-6 py-3 rounded font-semibold">
-          Start Shopping
-        </a>
-        <a href="#" class="border border-gold px-6 py-3 rounded font-semibold text-gold">
-          Open a Shop
-        </a>
+      <!-- LEFT CONTENT -->
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          Buy & Sell Anything on <span class="text-gold">Findora</span>
+        </h1>
+        <p class="mb-6 text-gray-300 text-sm sm:text-base">
+          A trusted multi-vendor marketplace where sellers grow and buyers shop with confidence.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <a href="#" class="bg-gold text-black px-6 py-3 rounded font-semibold text-center">
+            Start Shopping
+          </a>
+          <a href="#" class="border border-gold px-6 py-3 rounded font-semibold text-gold text-center">
+            Open a Shop
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- RIGHT HERO AD IMAGE -->
-    <div class="hidden md:block">
-      <div class="relative h-64 rounded-lg overflow-hidden shadow-lg">
-        <img
-          src="images/hero-ad.jpg"
-          alt="Findora Marketplace Deals"
-          class="w-full h-full object-cover"
-        />
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+      <!-- RIGHT HERO AD IMAGE -->
+      <div class="hidden md:block">
+        <div class="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+          <img
+            src="images/hero-ad.jpg"
+            alt="Findora Marketplace Deals"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        </div>
       </div>
+
     </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- FEATURED PRODUCTS -->
   <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center md:text-left">Featured Products</h2>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
       <!-- Smartphone -->
       <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
@@ -173,18 +173,18 @@
 
   <!-- FOOTER -->
   <footer class="bg-black text-gray-300">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
       <div>
-        <h3 class="text-white font-bold mb-3">Findora</h3>
-        <p class="text-sm">
+        <h3 class="text-white font-bold mb-3 text-center sm:text-left">Findora</h3>
+        <p class="text-sm text-center sm:text-left">
           A modern marketplace connecting buyers and sellers with trust and convenience.
         </p>
       </div>
 
       <div>
-        <h4 class="text-white font-semibold mb-3">Company</h4>
-        <ul class="space-y-2 text-sm">
+        <h4 class="text-white font-semibold mb-3 text-center sm:text-left">Company</h4>
+        <ul class="space-y-2 text-sm text-center sm:text-left">
           <li><a href="#" class="hover:text-gold">About Us</a></li>
           <li><a href="#" class="hover:text-gold">Careers</a></li>
           <li><a href="#" class="hover:text-gold">Blog</a></li>
@@ -192,8 +192,8 @@
       </div>
 
       <div>
-        <h4 class="text-white font-semibold mb-3">Support</h4>
-        <ul class="space-y-2 text-sm">
+        <h4 class="text-white font-semibold mb-3 text-center sm:text-left">Support</h4>
+        <ul class="space-y-2 text-sm text-center sm:text-left">
           <li><a href="#" class="hover:text-gold">Help Center</a></li>
           <li><a href="#" class="hover:text-gold">Returns</a></li>
           <li><a href="#" class="hover:text-gold">Contact Us</a></li>
@@ -201,8 +201,8 @@
       </div>
 
       <div>
-        <h4 class="text-white font-semibold mb-3">Vendors</h4>
-        <ul class="space-y-2 text-sm">
+        <h4 class="text-white font-semibold mb-3 text-center sm:text-left">Vendors</h4>
+        <ul class="space-y-2 text-sm text-center sm:text-left">
           <li><a href="#" class="hover:text-gold">Sell on Findora</a></li>
           <li><a href="#" class="hover:text-gold">Vendor Login</a></li>
         </ul>
