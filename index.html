@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Findora | Online Marketplace</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C9A24D',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- TOP BAR -->
+  <div class="bg-black text-white text-sm py-2">
+    <div class="max-w-7xl mx-auto flex justify-between px-4">
+      <p>Welcome to Findora Marketplace</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-gold">Login</a>
+        <a href="#" class="hover:text-gold">Register</a>
+        <a href="#" class="hover:text-gold">Vendor Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="images/Logo.jpg" alt="Findora Logo" class="h-10 w-auto">
+        <span class="text-2xl font-bold">Findora</span>
+      </div>
+
+      <div class="flex-1 mx-6">
+        <input
+          type="text"
+          placeholder="Search products, brands and categories..."
+          class="w-full border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <a href="#" class="font-semibold hover:text-gold">Cart</a>
+        <a href="#" class="bg-gold text-black px-4 py-2 rounded-full font-semibold hover:opacity-90">
+          Become a Vendor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATEGORIES -->
+  <section class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex space-x-6 overflow-x-auto text-sm font-semibold">
+      <a href="#" class="hover:text-gold">Electronics</a>
+      <a href="#" class="hover:text-gold">Fashion</a>
+      <a href="#" class="hover:text-gold">Home & Living</a>
+      <a href="#" class="hover:text-gold">Beauty</a>
+      <a href="#" class="hover:text-gold">Sports</a>
+      <a href="#" class="hover:text-gold">Groceries</a>
+    </div>
+  </section>
+
+  <section class="bg-black text-white">
+  <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Buy & Sell Anything on <span class="text-gold">Findora</span>
+      </h1>
+      <p class="mb-6 text-gray-300">
+        A trusted multi-vendor marketplace where sellers grow and buyers shop with confidence.
+      </p>
+      <div class="space-x-4">
+        <a href="#" class="bg-gold text-black px-6 py-3 rounded font-semibold">
+          Start Shopping
+        </a>
+        <a href="#" class="border border-gold px-6 py-3 rounded font-semibold text-gold">
+          Open a Shop
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT HERO AD IMAGE -->
+    <div class="hidden md:block">
+      <div class="relative h-64 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src="images/hero-ad.jpg"
+          alt="Findora Marketplace Deals"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Featured Products</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- Smartphone -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/products/phone.jpg" alt="Smartphone X Pro"
+             class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm">Smartphone X Pro</h3>
+          <p class="text-gold font-bold mt-1">KSh 29,999</p>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gold hover:text-black">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Headphones -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/products/headphones.jpg" alt="Wireless Headphones"
+             class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm">Wireless Headphones</h3>
+          <p class="text-gold font-bold mt-1">KSh 4,500</p>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gold hover:text-black">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Sneakers -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/products/sneakers.jpg" alt="Men’s Sneakers"
+             class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm">Men’s Sneakers</h3>
+          <p class="text-gold font-bold mt-1">KSh 3,200</p>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gold hover:text-black">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Blender -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="images/products/blender.jpg" alt="Blender & Mixer"
+             class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="font-semibold text-sm">Blender & Mixer</h3>
+          <p class="text-gold font-bold mt-1">KSh 6,800</p>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gold hover:text-black">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+
+      <div>
+        <h3 class="text-white font-bold mb-3">Findora</h3>
+        <p class="text-sm">
+          A modern marketplace connecting buyers and sellers with trust and convenience.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gold">About Us</a></li>
+          <li><a href="#" class="hover:text-gold">Careers</a></li>
+          <li><a href="#" class="hover:text-gold">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Support</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gold">Help Center</a></li>
+          <li><a href="#" class="hover:text-gold">Returns</a></li>
+          <li><a href="#" class="hover:text-gold">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Vendors</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gold">Sell on Findora</a></li>
+          <li><a href="#" class="hover:text-gold">Vendor Login</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 text-center py-4 text-sm">
+      © 2026 Findora. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
